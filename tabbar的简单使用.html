@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>tabbar的简单使用</title>
+<style type="text/css">
+    .box{
+         width: 300px;
+        height:200px;
+        border: 1px solid #000000;
+        /*取消系统自带的流水布局*/
+        overflow: hidden;
+    }
+    .one ,.two, .three{
+        width: 300px;
+        height: 200px;
+    }
+    .one{
+        background-color: green;
+    }
+    .two{
+        background-color: pink;
+    }
+    .three{
+        background-color: red;
+    }
+    a{
+        display: inline-block;
+        width: 40px;
+        border: 1px solid #000000;
+    }
+</style>
+
+</head>
+<body>
+    <a href="#one">div1</a>
+    <a href="#two">div2</a>
+    <a href="#three">div3</a>
+    <div class="box">
+        <div class="one" id="one">one</div>
+        <div class="two" id="two">two</div>
+        <div class="three" id="three">three</div>
+    </div>
+
+</body>
+
+</html>

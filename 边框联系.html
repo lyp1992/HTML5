@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>边框练习</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+        }
+        .box1{
+            border: 5px solid black ;
+        }
+        .box2{
+            border-width: 5px;
+            border-style: solid;
+            border-color: red blue purple green;
+        }
+        .box3{
+            border: 5px solid red;
+            border-right: 5px dashed red;
+        }
+        .box4{
+            border: 5px solid #000000;
+            border-style: solid dashed solid dotted;
+        }
+        .box5{
+            border: 5px solid #000000;
+            border-bottom: none;
+        }
+        .box6{
+            /*width: 0px;*/
+            /*height: 0px;*/
+            /*border-width:25px;*/
+            border-style:solid;
+            border-color: red white blue white;
+            border-bottom:none;
+        }
+
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<hr>
+<div class="box2"></div>
+<hr>
+<div class="box3"></div>
+<hr>
+<div class="box4"></div>
+<hr>
+<div class="box5"></div>
+<hr>
+<div class="box6"></div>
+<hr>
+</body>
+</html>
