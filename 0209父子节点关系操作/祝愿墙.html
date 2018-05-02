@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: auto 0;
+            padding: 0;
+            background: url(../0209Images/bg.gif) repeat center 36px;
+            text-align: center;
+            font-size: 12px;
+            background-color: #c30230;
+        }
+        #content{
+            margin: 0 auto;
+            width: 960px;
+            background: url(../0209Images/content_bg.jpg) no-repeat left top;
+            height: 627px;
+            position: relative;
+        }
+        #content .tip1{
+            position: absolute;
+            width: 227px;
+            left: 200px;
+            top: 100px;
+        }
+        #content .tip1 .tip_h{
+            background: url("../0209Images/tip1_h.gif") no-repeat left top;
+        }
+        #content .tip1 .tip_h{
+            width: 227px;
+            padding-top: 45px;
+            height: 23px;
+            text-align: left;
+            cursor: move;
+        }
+        #content .tip1 .tip_c{
+            background: url(../0209Images/tip1_c.gif) repeat-y;
+        }
+        #content .tip1 .tip_c{
+            width: 200px;
+            padding-left: 12px;
+            padding-right: 15px;
+            min-height: 40px;
+            text-align: left;
+            line-height: 20px;
+            max-height: 160px;
+            word-wrap: break-word;
+            word-break: break-all;
+            overflow: hidden;
+        }
+        #content .tip1 .tip_f {
+            background: url(../0209Images/tip1_f.gif) no-repeat left top;
+        }
+        #content .tip1 .tip_f{
+            width: 227px;
+            height: 53px;
+            padding-top: 20px;
+        }
+        #content .close{
+            float: left;
+            font-size: 12px;
+            cursor: pointer;
+            color: #000000;
+        }
+        #content .num {
+            float: left;
+            padding-left: 7px;
+            width: 195px;
+        }
+        #content .icon {
+            float: left;
+            width: 35px;
+            padding-left: 15px;
+            height: 35px;
+            text-align: center;
+        }
+        #content .name {
+            float: right;
+            padding-right: 15px;
+            text-align: right;
+            font-size: 14px;
+            line-height: 35px;
+            color: #C0F;
+        }
+        .clr {
+            clear: both;
+            overflow: auto;
+            display: block;
+            height: 0px;
+        }
+
+    </style>
+</head>
+<body>
+<!--纸墙-->
+<div id="content">
+    <!--纸条-->
+    <!--<div class="tip1" id="tip" >-->
+        <!--<div class="tip_h" title="双击关闭纸条">-->
+            <!--<div class="num">第[49568]条 2016-07-7 22:51:52</div>-->
+            <!--<div class="close" title="关闭纸条" >×</div>-->
+            <!--<div class="clr"></div>-->
+        <!--</div>-->
+        <!--<div class="tip_c">-->
+            <!--普天同庆，天下大同！-->
+        <!--</div>-->
+        <!--<div class="tip_f">-->
+            <!--<div class="icon">-->
+                <!--<img src="../0209Images/bpic_1.gif" alt="" title="">-->
+            <!--</div>-->
+            <!--<div class="name">不愿意透露姓名的吕先生</div>-->
+            <!--<div class="clr"></div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+</div>
+
+<script>
+/*创建多张纸条*/
+//    for(var i = 0;i<=10;i++){
+//        /*1.获取纸条,克隆*/
+//        var tip = document.getElementById("tip");
+//        var content = document.getElementById("content");
+//        var newtip = tip.cloneNode(true);
+//
+//        newtip.id = newtip.id+i;
+//        /*2.随机数值绑定改变位置*/
+//        var topValue = parseInt(Math.random()*400);
+//        var leftValue = parseInt(Math.random()*700);
+//        newtip.style.top = topValue+"px";
+//        newtip.style.left = leftValue+"px";
+//
+//        /*3.添加父盒子中*/
+//        content.appendChild(newtip);
+//
+//        /*4.改变层级*/
+//        newtip.onclick = fn;
+//    }
+///*第一个tip没有被绑定*/
+//    tip.onclick = fn;
+//    var index = 1;
+//    function fn() {
+//        this.style.zIndex = index;
+//        index++;
+//    }
+
+//模拟数据库，获取信息
+var messages = [
+    {"id":1,"name":"mahu","content":"今天你拿苹果支付了么","time":"2016-02-17 00:00:00"},
+    {"id":2,"name":"haha","content":"今天天气不错，风和日丽的","time":"2016-02-18 12:40:00"},
+    {"id":3,"name":"jjjj","content":"常要说的事儿是乐生于苦","time":"2016-03-18 12:40:00"},
+    {"id":4,"name":"9.8的妹纸","content":"把朋友家厕所拉堵了 不敢出去 掏了半小时了都","time":"2016-03-18 12:40:00"},
+    {"id":5,"name":"雷锋ii.","content":"元宵节快乐","time":"2016-02-22 12:40:00"},
+    {"id":6,"name":"哎呦哥哥.","content":"据说今晚央视的元宵晚会导演和春晚导演是同一个人，真是躲得过初一，躲不过十五。","time":"2016-02-22 01:30:00"},
+    {"id":7,"name":"没猴哥，不春晚","content":"班主任:“小明，你都十二岁了，还是三年级，不觉得羞愧吗”？。小明:“一点也不觉得，老师你都四十多岁了，不也是年年在三年级混日子吗？羞愧的应该是你”。老师:……","time":"2016-02-22 01:30:00"},
+    {"id":8,"name":"哎呦杰杰.","content":"真搞不懂你们地球人，月亮有什么好看的，全是坑，还是对面那哥们好看，","time":"2016-02-22 01:30:00"},
+    {"id":9,"name":"哎呦哎呦","content":"今天哪里的烟花最好看！！？答：朋友圈。。。","time":"2016-02-22 02:30:00"}
+];
+
+    var content = document.getElementById("content");
+    for(var i=0;i<messages.length;i++){
+/*生成新标签*/
+        var newDiv = document.createElement("div");
+        /*绑定类名和id*/
+        newDiv.className = "tip1";
+        newDiv.id = "tip"+messages[i].id;
+        /*改变位置*/
+        var topValue = parseInt(Math.random()*400);
+        var leftValue = parseInt(Math.random()*700);
+        newDiv.style.top = topValue+"px";
+        newDiv.style.left = leftValue+"px";
+        /*复制内容*/
+
+        newDiv.innerHTML = '<div class="tip_h">'+
+                '<div class="num">第[49568]条 '+messages[i].time+'</div>'+
+        '<div class="close">x</div>'+
+                '</div>'+
+                '<div class="tip_c">'+
+                    messages[i].content+
+                '</div>'+
+                '<div class="tip_f">'+
+                '<div class="icon">'+'<img src="../0209Images/bpic_1.gif">'+'</div>'+
+                '<div class="name">'+messages[i].name+'</div>'+
+                '</div>';
+        content.appendChild(newDiv);
+        //绑定事件，提高层级
+        newDiv.onclick = fn;
+
+        /*g关闭事件*/
+        var closeDiv = document.getElementsByClassName("close")[0];
+        closeDiv.onclick = function () {
+            /*移除元素*/
+            content.removeChild(this.parentNode.parentNode);
+        }
+        //双击关闭按钮类名叫做tip_h
+//        var dbDiv = newDiv.getElementsByClassName("tip_h")[0];
+//       dbDiv.ondblclick = function () {
+//           content.removeChild(this.parentNode);
+//       }
+    }
+    var index = 1;
+    function fn() {
+        this.style.zIndex = index;
+        index++;
+    }
+</script>
+
+</body>
+</html>

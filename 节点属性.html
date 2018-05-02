@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片切换</title>
+</head>
+<body>
+    <a href="http://www.baidu.com" style="margin: 10px;display: block" onclick="fn();return false">切换</a>
+    <img src="imagesJS体验/1.jpg" id="img" width="400px"/>
+
+    <script>
+
+        <!--方法一-->
+//        var img = document.getElementById("img");
+//        function fn() {
+//            img.src = "imagesJS体验/2.jpg";
+//        }
+//        方法二
+        var a = document.getElementsByTagName("a")[0];
+        var img = document.getElementById("img");
+//        绑定事件
+        a.onclick = function () {
+            img.src = "imagesJS体验/2.jpg";
+            //return false的目的是禁止a连接跳转；
+            return false;
+        }
+    </script>
+</body>
+</html>

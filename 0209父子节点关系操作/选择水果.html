@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        select {
+            width: 180px;
+            height: 240px;
+            font-size: 16px;
+            background-color: #7dff51;
+        }
+
+    </style>
+    <script>
+        window.onload = function () {
+            /*获取相关元素*/
+            var sel1 = document.getElementById("sel1");
+            var sel2 = document.getElementById("sel2");
+            var btnArr = document.getElementsByTagName("button");
+            /*绑定事件*/
+            btnArr[0].onclick = function () {
+                /*获取左侧select所有的标签*/
+              fn1(sel1,sel2);
+            }
+            btnArr[1].onclick = function () {
+               fn1(sel2,sel1);
+            }
+
+            function fn1(esel1,esel2) {
+                var arr = esel1.children;
+                for(var i = arr.length - 1;i >= 0;i--){
+                    esel2.appendChild(arr[0]);
+                }
+            }
+
+            btnArr[2].onclick = function () {
+                fn2(sel1,sel2);
+            }
+
+            btnArr[3].onclick = function () {
+               fn2(sel2,sel1);
+            }
+
+            function fn2(esel1,esel2) {
+                var arr = esel1.children;
+                for(var i=arr.length-1;i>=0;i--){
+                    if (arr[i].selected == true){
+                        arr[i].selected = false;
+                        esel2.appendChild(arr[i]);
+                    }
+                }
+                /*排序*/
+                var aaa = Array.from(esel2.children).sort(function (a,b) {
+                    return a.value-b.value;
+                })
+                /*删除所有子元素*/
+                for(var i=0;i<esel2.children.length;i++){
+                    esel2.removeChild(esel2.children[i]);
+                }
+                /*把排好序的数组放在*/
+                for(var i=0;i<aaa.length;i++){
+                    esel2.appendChild(aaa[i]);
+                }
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <select name="" size="10" id="sel1" multiple>
+        <option value="0">香蕉</option>
+        <option value="1">苹果</option>
+        <option value="2">鸭梨</option>
+        <option value="3">葡萄</option>
+    </select>
+    <button>>>></button>
+    <button><<<</button>
+    <button>></button>
+    <button><</button>
+    <select name="" size="10" id="sel2" multiple>
+
+    </select>
+</body>
+</html>

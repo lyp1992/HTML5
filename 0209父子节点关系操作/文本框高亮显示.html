@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+   <style>
+       input{
+           display: block;
+       }
+   </style>
+</head>
+<body>
+    <ul>
+        <input type="text"/>
+        <input type="text"/>
+        <input type="text"/>
+        <input type="text"/>
+        <input type="text"/>
+        <button>设置</button>
+    </ul>
+    <script>
+        /*获取时间源*/
+        var inputArr = document.getElementsByTagName("input");
+        var button = inputArr[inputArr.length-1].nextElementSibling||inputArr[inputArr.length-1].nextSibling;
+        /*绑定事件源*/
+        button.onclick = function () {
+         /*书写事件源*/
+            for(var i = 0;i<inputArr.length;i++){
+                inputArr[i].onfocus = function () {
+                   this.style.border = "2px solid red";
+                    this.style.backgroundColor = "#ccc";
+                }
+                inputArr[i].onblur = function () {
+                    this.style.border = "";
+                    this.style.backgroundColor = "";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

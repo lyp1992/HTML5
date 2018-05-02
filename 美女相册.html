@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html >
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>美女相册</title>
+    <style type="text/css">
+        body {
+            font-family: "Helvetica", "Arial", serif;
+            color: #333;
+            background-color: #ccc;
+            margin: 1em 10%;
+        }
+        h1 {
+            color: #333;
+            background-color: transparent;
+        }
+        a {
+            color: #c60;
+            background-color: transparent;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        ul{
+            padding: 0;
+        }
+        li{
+            float: left;
+            padding: 0;
+            list-style: none;
+        }
+        #imagegallery li{
+            margin: 0px 20px 20px 0px;
+        }
+
+    </style>
+</head>
+<body>
+<h2>
+    美女相册
+</h2>
+<a href="#">注册</a>
+<ul id="imagegallery">
+    <li>
+        <a href="imagesJS体验/1.jpg" title="美女A">
+            <img src="imagesJS体验/1-small.jpg" width="100px">
+        </a>
+    </li>
+    <li>
+        <a href="imagesJS体验/2.jpg" title="美女B">
+            <img src="imagesJS体验/2-small.jpg" width="100px">
+        </a>
+    </li>
+    <li>
+        <a href="imagesJS体验/3.jpg" title="美女C">
+            <img src="imagesJS体验/3-small.jpg" width="100px">
+        </a>
+    </li>
+    <li>
+        <a href="imagesJS体验/4-small.jpg" title="美女D">
+            <img src="imagesJS体验/4-small.jpg" width="100px">
+        </a>
+    </li>
+</ul>
+<div style="clear: both"></div>
+<img id="imgage" src="imagesJS体验/placeholder.png" width="450px">
+<p id="des">选择一张图片</p>
+
+<script>
+    var ul = document.getElementById("imagegallery");
+    var aArr = ul.getElementsByTagName("a");
+    var image = document.getElementById("imgage");
+    var des = document.getElementById("des");
+    for(var i = 0;i<aArr.length;i++){
+        aArr[i].onclick = function () {
+            image.src = this.href;
+            des.innerHTML = this.title;
+            return false;
+        }
+    }
+
+</script>
+
+</body>
+</html>

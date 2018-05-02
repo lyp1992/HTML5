@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style >
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background: url("../0209Images/1.jpg") no-repeat;
+        }
+        .box{
+            height: 150px;
+            padding-top: 35px;
+            text-align: center;
+            background-color: rgba(255,255,255,0.3);
+        }
+        img{
+            cursor: pointer;/*光标不同*/
+            margin: 0 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<!--创建图片-->
+    <div class="box" id="box">
+        <img src="../0209Images/1.jpg" width="200px"/>
+        <img src="../0209Images/2.jpg" width="200px"/>
+        <img src="../0209Images/3.jpg" width="200px"/>
+        <img src="../0209Images/4.jpg" width="200px"/>
+        <img src="../0209Images/5.jpg" width="200px"/>
+    </div>
+    <script>
+//        <!--获取事件源-->
+//        var box = document.getElementsByTagName("div")[0];
+//        var box = document.getElementsByClassName("box")[0];
+var box = document.getElementById("box");
+        console.log(box);
+        var body = document.body;
+        var imageArr = box.children;
+//        绑定事件
+        for(var i = 0;i<imageArr.length;i++){
+            imageArr[i].index = i;
+            imageArr[i].onclick = function () {
+//                书写驱动事件
+//                body.style.backgroundImage = "url("+(this.src)+")";
+                body.style.backgroundImage = "url(../0209Images/"+(this.index+1)+".jpg)";
+            }
+}
+    </script>
+</body>
+</html>

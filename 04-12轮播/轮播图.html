@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .box{
+            width: 490px;
+            height: 170px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            margin: 100px auto;
+        }
+        .inner {
+            width: 490px;
+            height: 170px;
+            position: relative;
+            overflow: hidden;
+        }
+        ul{
+            width: 500%;
+            list-style: none;
+            position: absolute;
+            left: 0px;
+        }
+        li{
+            float: left;
+        }
+        .square {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+        span{
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-color: #fff;
+            text-align: center;
+            margin: 3px;
+            border: 1px solid #ccc;
+            line-height: 16px;
+            cursor: pointer;
+        }
+        .current{
+            background-color: darkorange;
+            color: #fff;
+        }
+        #arr {display: block;}
+        #arr span{
+            width:40px;
+            height:40px;
+            position:absolute;
+            left:5px; top:50%;
+            margin-top:-20px;
+            background:#000;
+            cursor:pointer;
+            line-height:40px;
+            text-align:center;
+            font-weight:bold;
+            font-family:'黑体';
+            font-size:30px;
+            color:#fff;
+            opacity:0.3;
+            border:1px solid #fff
+        }
+        #arr #right{right:5px; left:auto;}
+
+    </style>
+    <script>
+        window.onload = function () {
+            var index = 0;
+//            获取事件源
+            var inner = document.getElementById("inner");
+            var imageWidth = inner.offsetWidth;
+            var box = document.getElementById("box");
+
+            var ul = inner.children[0];
+            var spanArr = inner.children[1].children;
+            var directArr = inner.children[2].children;
+            for(var i =0;i<spanArr.length;i++){
+                spanArr[i].index = i;
+
+                spanArr[i].onmouseover = function () {
+                    // 点亮盒子
+                    for(var j=0;j<spanArr.length;j++){
+                        spanArr[j].className = "";
+                    }
+                    this.className = "current";
+                    index = this.index;
+                    animate(ul,-this.index *imageWidth);
+                }
+            }
+
+            function animate(ele,target) {
+                clearInterval(ele.timer);
+                var speed = target>ele.offsetLeft?10:-10;
+                ele.timer = setInterval(function () {
+                    var val = target - ele.offsetLeft;
+                    ele.style.left = ele.offsetLeft + speed + "px";
+                    if(Math.abs(val)<Math.abs(speed)){
+                        ele.style.left = target + "px";
+                        clearInterval(ele.timer);
+                    }
+                },5)
+            }
+
+            //            添加定时器
+            var timer = setInterval(autoPlay,2000);
+
+            function autoPlay() {
+                index ++;
+//                进行约束
+                if(index > ul.children.length-1){
+                    index = 0;
+                }
+                //               点亮盒子
+                for(var m = 0;m<spanArr.length;m++){
+                    spanArr[m].className = "";
+                }
+                spanArr[index].className = "current";
+                animate(ul,-index *imageWidth);
+            }
+
+//            点击事件
+//            左边
+            directArr[1].onclick = function () {
+                autoPlay();
+            }
+
+            directArr[0].onclick = function () {
+                index -- ;
+                if (index<0){
+                    index = spanArr.length-1;
+                }
+                //               点亮盒子
+                for(var m = 0;m<spanArr.length;m++){
+                    spanArr[m].className = "";
+                }
+                spanArr[index].className = "current";
+                animate(ul, -index *imageWidth);
+
+            }
+
+//            鼠标在inner上的时候,定时器停止
+            box.onmouseover = function () {
+
+                clearInterval(timer);
+            }
+            box.onmouseout = function () {
+              timer = setInterval(autoPlay,2000);
+            }
+
+        }
+    </script>
+</head>
+<body>
+<div class="box" id="box">
+    <div class="inner" id="inner">
+        <ul>
+            <li><img src="轮播图Image/01.jpg" alt=""/></li>
+            <li><img src="轮播图Image/02.jpg" alt=""/></li>
+            <li><img src="轮播图Image/03.jpg" alt=""/></li>
+            <li><img src="轮播图Image/04.jpg" alt=""/></li>
+            <li><img src="轮播图Image/05.jpg" alt=""/></li>
+        </ul>
+        <div class="square">
+            <span class="current">1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+        </div>
+        <div id="arr">
+            <span id="left"><</span>
+            <span id="right">></span>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

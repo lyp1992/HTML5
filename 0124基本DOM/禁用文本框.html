@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>禁用文本框</title>
+    <style>
+        input {
+            width: 300px;
+            height: 36px;
+            padding-left: 5px;
+            color: #ccc;
+        }
+        label {
+            position: absolute;
+            top: 66px;
+            left: 56px;
+            font-size: 12px;
+            color: #ccc;
+            cursor: text;
+        }
+        .hide {
+              display: none;
+          }
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+placeholder:<input type="text" placeholder="我是placeholder"><br>
+淘宝:<label for="inp2">我是淘宝</label><input type="text" id="inp2"><br>
+京东:<input type="text" id="inp1" value="我是京东"><br>
+<script>
+        var inp1 = document.getElementById("inp1");
+        inp1.onfocus = function () {
+            if (this.value === "我是京东"){
+                inp1.value = "";
+            }
+        }
+        inp1.onblur = function () {
+            if (this.value === ""){
+                inp1.value = "我是京东"
+            }
+        }
+
+        var inp2 = document.getElementById("inp2");
+        var lab = document.getElementsByTagName("label")[0];
+        inp2.oninput = function () {
+            if (this.value === ""){
+                lab.className = "show";
+            }else {
+                lab.className = "hide";
+            }
+        }
+    </script>
+</body>
+</html>

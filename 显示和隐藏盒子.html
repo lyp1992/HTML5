@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        button{
+            margin: 10px;
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: pink;
+        }
+        .show{
+            display: block;
+        }
+        .hide{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <button id="btn">隐藏</button>
+    <div>临千仞之溪,非才长也,位高也</div>
+<script>
+    var btn = document.getElementById("btn");
+    var div = document.getElementsByTagName("div")[0];
+    btn.onclick = function () {
+        //3.书写事件驱动程序
+        //判断btn的innerHTML属性值，如果为隐藏就隐藏盒子，并修改按钮内容为显示。
+        //反之，则显示，并修改按钮内容为隐藏
+        if(this.innerHTML === "隐藏"){
+            div.className = "hide";
+            //修改文字（innerHTML）
+            btn.innerHTML = "显示";
+        }else{
+            div.className = "show";
+            //修改文字（innerHTML）
+            btn.innerHTML = "隐藏";
+        }
+    }
+</script>
+
+</body>
+</html>

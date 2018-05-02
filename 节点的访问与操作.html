@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>节点的访问与操作</title>
+
+</head>
+<body>
+<div class="box1">
+    <div class="box2" id="box2"></div>
+    <div class="box3"></div>
+</div>
+
+<script>
+    <!--区分class 和id 的区别-->
+    //        var box2 = document.getElementsByClassName("box2")[0];
+    var box2 = document.getElementById("box2");
+    /*所有子节点*/
+    console.log(box2.parentNode.childNodes);
+    console.log(box2.parentNode.children);
+    /*节点操作*/
+    /*创建*/
+    var aaa = document.createElement("li");
+    var bbb = document.createElement("adfghj");
+    /*添加*/
+    var box1 = document.getElementsByClassName("box1")[0];
+    box1.appendChild(aaa);
+    box1.insertBefore(bbb,aaa);
+    /*删除*/
+    box1.removeChild(aaa);
+    bbb.parentNode.removeChild(bbb);
+    /*克隆*/
+    var ccc = box1.cloneNode();
+    var ddd = box1.cloneNode(true);
+    console.log(ccc);
+    console.log(ddd);
+</script>
+
+</body>
+</html>
