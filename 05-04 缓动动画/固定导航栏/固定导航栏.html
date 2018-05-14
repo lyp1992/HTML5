@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        img {
+            vertical-align: top;
+        }
+
+        .main {
+            margin: 0 auto;
+            width: 1000px;
+            margin-top: 10px;
+
+        }
+
+        #Q-nav1 {
+            overflow: hidden;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+    </style>
+    <script src="Nav.js"></script>
+    <script >
+
+        window.onload = function () {
+
+//            获取对象
+            var topDiv = document.getElementById("top");
+            var middleDiv = document.getElementById("Q-nav1");
+            var mainDiv  = document.getElementById("main");
+            var topHeight = topDiv.offsetHeight;
+            window.onscroll = function () {
+                console.log(scroll().top);
+                console.log(topHeight);
+                if (scroll().top > topHeight){
+                    middleDiv.className = "fixed";
+//                    第二个盒子不占位置,所以我们给第三个盒子设置一个顶部距离
+                    mainDiv.style.paddingTop = middleDiv.offsetHeight + "px";
+                }else {
+                    middleDiv.className = "";
+                    mainDiv.style.paddingTop = 0;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="top" id="top">
+        <img src="images/top.png" alt=""/>
+    </div>
+   <div id="Q-nav1">
+       <img src="images/nav.png" alt=""/>
+   </div>
+    <div class="main" id="main">
+        <img src="images/main.png" alt=""/>
+    </div>
+
+</body>
+
+</html>

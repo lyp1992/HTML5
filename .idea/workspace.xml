@@ -2,66 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b8e1157-c9d4-4e3d-951a-db7cde02d09b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/0f000PC3L7v5WMl_8bcCX6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/bpic_1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/cloud.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/content.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/content_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/lb1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/lb2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/lb3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/lb4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/lb5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/main.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/mm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/nav.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/rss.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/taobao.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/tianshi.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/tip1_c.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/tip1_f.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/tip1_h.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/xiaoniao.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209Images/百度换肤.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagesJS体验/1-small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagesJS体验/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagesJS体验/2-small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagesJS体验/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagesJS体验/3-small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagesJS体验/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagesJS体验/4-small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagesJS体验/jd1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagesJS体验/jd2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagesJS体验/placeholder.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0124基本DOM/禁用文本框.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0124基本DOM/隐藏和显示二维码.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209父子节点关系操作/创建高亮列表.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209父子节点关系操作/文本框高亮显示.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209父子节点关系操作/百度换肤.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209父子节点关系操作/祝愿墙.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209父子节点关系操作/苹果发布会倒计时.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209父子节点关系操作/选择水果.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0209父子节点关系操作/高亮隔行显示.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/04-12轮播/简单动画.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/04-12轮播/轮播图.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/事件处理.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/京东狗.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/关闭京东广告栏.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/初识JS.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/显示和隐藏盒子.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/美女相册.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/节点属性.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/节点的访问与操作.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05-04 放大镜/img.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05-04 放大镜/图片跟随鼠标移动.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05-04 放大镜/拖拽案例.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05-04 放大镜/楼层跳跃.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05-04 放大镜/模仿淘宝放大镜.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05-04 放大镜/模拟滚动条.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05-04 放大镜/鼠标在盒子中的位置.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05-04 缓动动画/两侧跟随广告/asideNav.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05-04 缓动动画/两侧跟随广告/两侧跟随广告.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05-04 缓动动画/回到顶部/回到顶部小火箭.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05-04 缓动动画/固定导航栏/Nav.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05-04 缓动动画/固定导航栏/固定导航栏.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -83,11 +35,93 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="轮播图.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/04-12轮播/轮播图.html">
+      <file leaf-file-name="asideNav.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/05-04 缓动动画/两侧跟随广告/asideNav.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-594">
-              <caret line="104" column="38" selection-start-line="104" selection-start-column="38" selection-end-line="104" selection-end-column="38" />
+            <state relative-caret-position="648">
+              <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+              <folding>
+                <element signature="n#!!doc;n#scroll#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="两侧跟随广告.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/05-04 缓动动画/两侧跟随广告/两侧跟随广告.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="回到顶部小火箭.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/05-04 缓动动画/回到顶部/回到顶部小火箭.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="楼层跳跃.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/05-04 放大镜/楼层跳跃.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1584">
+              <caret line="88" column="17" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="图片跟随鼠标移动.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/05-04 放大镜/图片跟随鼠标移动.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="558">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="鼠标在盒子中的位置.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/05-04 放大镜/鼠标在盒子中的位置.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="684">
+              <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="拖拽案例.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/05-04 放大镜/拖拽案例.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="88" column="25" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="模拟滚动条.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/05-04 放大镜/模拟滚动条.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="491">
+              <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="模仿淘宝放大镜.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/05-04 放大镜/模仿淘宝放大镜.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -99,6 +133,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -146,6 +181,17 @@
         <option value="$PROJECT_DIR$/0209父子节点关系操作/苹果发布会倒计时.html" />
         <option value="$PROJECT_DIR$/04-12轮播/简单动画.html" />
         <option value="$PROJECT_DIR$/04-12轮播/轮播图.html" />
+        <option value="$PROJECT_DIR$/05-04 缓动动画/固定导航栏/Nav.js" />
+        <option value="$PROJECT_DIR$/05-04 缓动动画/固定导航栏/固定导航栏.html" />
+        <option value="$PROJECT_DIR$/05-04 缓动动画/两侧跟随广告/asideNav.js" />
+        <option value="$PROJECT_DIR$/05-04 缓动动画/两侧跟随广告/两侧跟随广告.html" />
+        <option value="$PROJECT_DIR$/05-04 缓动动画/回到顶部/回到顶部小火箭.html" />
+        <option value="$PROJECT_DIR$/05-04 放大镜/楼层跳跃.html" />
+        <option value="$PROJECT_DIR$/05-04 放大镜/图片跟随鼠标移动.html" />
+        <option value="$PROJECT_DIR$/05-04 放大镜/鼠标在盒子中的位置.html" />
+        <option value="$PROJECT_DIR$/05-04 放大镜/拖拽案例.html" />
+        <option value="$PROJECT_DIR$/05-04 放大镜/模拟滚动条.html" />
+        <option value="$PROJECT_DIR$/05-04 放大镜/模仿淘宝放大镜.html" />
       </list>
     </option>
   </component>
@@ -156,10 +202,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="573" />
-    <option name="y" value="35" />
+    <option name="x" value="16" />
+    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="705" />
+    <option name="height" value="710" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -216,7 +262,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="04-12轮播" />
+              <option name="myItemId" value="05-04 放大镜" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="05-04 放大镜" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -235,11 +299,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/05-04 放大镜" />
+      <recent name="$PROJECT_DIR$/05-04 缓动动画/回到顶部" />
+      <recent name="$PROJECT_DIR$/05-04 缓动动画/两侧跟随广告" />
+      <recent name="$PROJECT_DIR$/05-04 缓动动画/固定导航栏" />
       <recent name="$PROJECT_DIR$/0209Images" />
-      <recent name="$PROJECT_DIR$/imagesJS体验" />
-      <recent name="$PROJECT_DIR$/imagesJD" />
-      <recent name="$PROJECT_DIR$/images" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -362,22 +426,29 @@
       <workItem from="1523517569163" duration="10000" />
       <workItem from="1523517606566" duration="5384000" />
       <workItem from="1525248112953" duration="3998000" />
+      <workItem from="1525398986962" duration="6838000" />
+      <workItem from="1525414895306" duration="3815000" />
+      <workItem from="1525764914856" duration="562000" />
+      <workItem from="1525921346385" duration="790000" />
+      <workItem from="1526005844928" duration="1879000" />
+      <workItem from="1526263903977" duration="4638000" />
+      <workItem from="1526276941696" duration="8563000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92668000" />
+    <option name="totallyTimeSpent" value="119753000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="573" y="35" width="1280" height="705" extended-state="0" />
-    <editor active="false" />
+    <frame x="16" y="23" width="1280" height="710" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27799842" sideWeight="0.49344262" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28832406" sideWeight="0.49344262" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24917492" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.5065574" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.04893964" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -411,106 +482,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/images楼兰/sj.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images楼兰/subtitle.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images楼兰/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images楼兰/serch.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/楼兰商贸.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5958">
-          <caret line="331" column="35" selection-start-line="331" selection-start-column="35" selection-end-line="331" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cssJD/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imagesJD/img2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imagesJD/slogan1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imagesJD/slogan2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imagesJD/slogan3.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imagesJD/slogan4.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imagesJD/img1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imagesJD/pic3.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imagesJD/pic2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imagesJD/pic1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imagesJD/logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cssJD/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="356" column="17" selection-start-line="356" selection-start-column="17" selection-end-line="356" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/商合网页.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5236">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/imagesJS体验/search.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -687,7 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -695,7 +665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6030">
           <caret line="335" column="10" selection-start-line="335" selection-start-column="10" selection-end-line="335" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -703,7 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -711,14 +679,142 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3042">
           <caret line="169" column="13" selection-start-line="169" selection-start-column="13" selection-end-line="169" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/04-12轮播/轮播图.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-594">
-          <caret line="104" column="38" selection-start-line="104" selection-start-column="38" selection-end-line="104" selection-end-column="38" />
+        <state relative-caret-position="2196">
+          <caret line="122" column="46" selection-start-line="122" selection-start-column="46" selection-end-line="122" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05-04 缓动动画/固定导航栏/images/top.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05-04 缓动动画/固定导航栏/images/nav.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05-04 缓动动画/固定导航栏/images/main.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05-04 缓动动画/两侧跟随广告/images/aside.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05-04 缓动动画/固定导航栏/固定导航栏.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="954">
+          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05-04 缓动动画/固定导航栏/Nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="43" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc;n#scroll#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05-04 缓动动画/两侧跟随广告/asideNav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc;n#scroll#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05-04 缓动动画/回到顶部/images/Top.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05-04 缓动动画/两侧跟随广告/两侧跟随广告.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05-04 缓动动画/回到顶部/回到顶部小火箭.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05-04 放大镜/楼层跳跃.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1584">
+          <caret line="88" column="17" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05-04 放大镜/图片跟随鼠标移动.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05-04 放大镜/鼠标在盒子中的位置.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05-04 放大镜/拖拽案例.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="88" column="25" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="1525" column="0" selection-start-line="1525" selection-start-column="0" selection-end-line="1525" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05-04 放大镜/模拟滚动条.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05-04 放大镜/images/0001.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05-04 放大镜/模仿淘宝放大镜.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
           <folding />
         </state>
       </provider>

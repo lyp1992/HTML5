@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            height: 5000px;
+        }
+        img {
+            position: absolute;
+            padding: 10px 0;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<img src="img.jpg" width="100"/>
+<script>
+
+    <!--获取图片-->
+        var img = document.getElementsByTagName("img")[0];
+
+        var timer = null;
+        var targetX = 0; var targetY = 0;
+        var leaderX = 0; var leaderY = 0;
+
+//    获取点击事件
+        document.onclick = function (event) {
+
+//             兼容事件
+            event = event||window.event;
+//            获取鼠标的位置
+            var pageX = event.pageX||scroll().left +event.clientX;
+            var pageY = event.pageY || scroll().top + event.clientY;
+
+            targetX = pageX - 30;
+            targetY = pageY - 50;
+
+            clearInterval(timer)
+            timer = setInterval(function () {
+
+//                获取现在盒子的位置
+                leaderX = img.offsetLeft;
+
+//                设置步长
+                var stepx = (targetX - leaderX)/10;
+//                二次设置步长
+                stepx = stepx>0?Math.ceil(stepx):Math.floor(stepx);
+                leaderX = leaderX + stepx;
+                img.style.left = leaderX + "px";
+
+                leaderY = img.offsetTop;
+//               设置步长
+                var stepy = (targetY - leaderY)/10;
+//                二次设置步长
+                stepy = stepy>0?Math.ceil(stepy):Math.floor(stepy);
+                leaderY = leaderY + stepy;
+                img.style.top = leaderY + "px";
+
+            },30)
+
+        }
+
+</script>
+</body>
+</html>

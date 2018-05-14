@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 200px;
+            padding-top: 100px;
+            background-color: pink;
+            margin: 100px;
+            text-align: center;
+            font: 18px/30px "simsun";
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+    <script>
+<!--获取标签,-->
+        var div = document.getElementsByClassName("box")[0];
+//        绑定事件
+        div.onmousemove = function (event) {
+//获取事件
+            event = event || window.event;
+//       获取鼠标在整个页面的位置
+            var pageX = event.pageX || scroll().left + event.clientX;
+            var pageY = event.pageY || scroll().top + event.clientY;
+
+//            获取鼠标在标签中的位置
+            var targetX = pageX - div.offsetLeft;
+            var targety = pageY - div.offsetTop;
+
+            this.innerHTML = "鼠标在盒子中的X坐标:"+targetX+"px;<br>鼠标在盒子中的Y坐标:"+targety+"px";
+
+        }
+    </script>
+</body>
+</html>

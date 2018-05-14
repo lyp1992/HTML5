@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body,html{
+            height:100%;
+        }
+        ul{
+            list-style: none;
+            height:100%;
+        }
+        ul li{
+            height:100%;
+        }
+        ol{
+            list-style:none;
+            position: fixed;
+            top: 80px;
+            left: 50px;
+        }
+        ol li{
+            width: 50px;
+            height: 50px;
+            border: 1px solid #000;
+            text-align: center;
+            line-height: 50px;
+            margin-top: -1px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>鞋子区域</li>
+    <li>袜子区域</li>
+    <li>裤子区域</li>
+    <li>裙子区域</li>
+    <li>帽子区域</li>
+</ul>
+<ol>
+    <li>鞋子</li>
+    <li>袜子</li>
+    <li>裤子</li>
+    <li>裙子</li>
+    <li>帽子</li>
+</ol>
+
+<script src="../05-04%20缓动动画/两侧跟随广告/asideNav.js"></script>
+<script>
+
+    <!--获取元素-->
+
+    var ul = document.getElementsByTagName("ul")[0];
+    var ol = document.getElementsByTagName("ol")[0];
+    var ulArr = ul.children;
+    var olArr = ol.children;
+
+    var target = 0;
+    var leader = 0;
+    var timer = null;
+
+    /*设置背景颜色*/
+    var arrColor = ["pink","blue","yellow","orange","green"];
+    for (var i = 0;i<arrColor.length;i++){
+//        上色
+        ulArr[i].style.backgroundColor = arrColor[i];
+        olArr[i].style.backgroundColor = arrColor[i];
+
+//       绑定属性
+        olArr[i].index = i;
+        olArr[i].onclick = function () {
+/*获取目标位置*/
+            target = ulArr[this.index].offsetTop;
+            clearInterval(timer);
+            timer = setInterval(function () {
+                var step = (target - leader)/10;
+                step = step>0?Math.ceil(step):Math.floor(step);
+                leader = leader + step;
+                window.scrollTo(0,leader);
+                if (Math.abs(target - leader)<=Math.abs(step)){
+                    window.scrollTo(0,target);
+                    clearInterval(timer);
+                }
+            },18)
+
+        }
+
+    }
+    //4.用scroll事件模拟盒子距离最顶端的距离。
+    window.onscroll = function () {
+        //每次屏幕滑动，把屏幕卷去的头部赋值给leader,模拟获取显示区域距离顶部的距离
+        leader = scroll().top;
+    }
+
+</script>
+</body>
+</html>
