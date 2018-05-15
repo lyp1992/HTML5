@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b8e1157-c9d4-4e3d-951a-db7cde02d09b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05-04 放大镜/img.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05-04 放大镜/图片跟随鼠标移动.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05-04 放大镜/拖拽案例.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05-04 放大镜/楼层跳跃.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05-04 放大镜/模仿淘宝放大镜.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05-04 放大镜/模拟滚动条.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05-04 放大镜/鼠标在盒子中的位置.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05-04 缓动动画/两侧跟随广告/asideNav.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05-04 缓动动画/两侧跟随广告/两侧跟随广告.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05-04 缓动动画/回到顶部/回到顶部小火箭.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05-04 缓动动画/固定导航栏/Nav.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05-04 缓动动画/固定导航栏/固定导航栏.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05-15 缓动框架/Jqurey 1.0.0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05-15 缓动框架/仿360开机效果.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05-15 缓动框架/缓动框架.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -35,93 +26,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="asideNav.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/05-04 缓动动画/两侧跟随广告/asideNav.js">
+      <file leaf-file-name="仿360开机效果.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/05-15 缓动框架/仿360开机效果.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
-              <folding>
-                <element signature="n#!!doc;n#scroll#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="两侧跟随广告.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/05-04 缓动动画/两侧跟随广告/两侧跟随广告.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+            <state relative-caret-position="144">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="回到顶部小火箭.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/05-04 缓动动画/回到顶部/回到顶部小火箭.html">
+      <file leaf-file-name="缓动框架.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/05-15 缓动框架/缓动框架.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="楼层跳跃.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/05-04 放大镜/楼层跳跃.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1584">
-              <caret line="88" column="17" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="图片跟随鼠标移动.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/05-04 放大镜/图片跟随鼠标移动.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="鼠标在盒子中的位置.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/05-04 放大镜/鼠标在盒子中的位置.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="拖拽案例.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/05-04 放大镜/拖拽案例.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="88" column="25" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="模拟滚动条.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/05-04 放大镜/模拟滚动条.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="模仿淘宝放大镜.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/05-04 放大镜/模仿淘宝放大镜.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+            <state relative-caret-position="158">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -192,6 +111,9 @@
         <option value="$PROJECT_DIR$/05-04 放大镜/拖拽案例.html" />
         <option value="$PROJECT_DIR$/05-04 放大镜/模拟滚动条.html" />
         <option value="$PROJECT_DIR$/05-04 放大镜/模仿淘宝放大镜.html" />
+        <option value="$PROJECT_DIR$/05-15 缓动框架/缓动框架.html" />
+        <option value="$PROJECT_DIR$/05-15 缓动框架/Jqurey 1.0.0.js" />
+        <option value="$PROJECT_DIR$/05-15 缓动框架/仿360开机效果.html" />
       </list>
     </option>
   </component>
@@ -202,7 +124,6 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="16" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="710" />
@@ -262,7 +183,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="05-04 放大镜" />
+              <option name="myItemId" value="05-15 缓动框架" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -276,7 +197,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="05-04 放大镜" />
+              <option name="myItemId" value="05-15 缓动框架" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -299,11 +220,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/05-15 缓动框架" />
       <recent name="$PROJECT_DIR$/05-04 放大镜" />
       <recent name="$PROJECT_DIR$/05-04 缓动动画/回到顶部" />
       <recent name="$PROJECT_DIR$/05-04 缓动动画/两侧跟随广告" />
       <recent name="$PROJECT_DIR$/05-04 缓动动画/固定导航栏" />
-      <recent name="$PROJECT_DIR$/0209Images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -433,14 +354,15 @@
       <workItem from="1526005844928" duration="1879000" />
       <workItem from="1526263903977" duration="4638000" />
       <workItem from="1526276941696" duration="8563000" />
+      <workItem from="1526352547405" duration="3678000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119753000" />
+    <option name="totallyTimeSpent" value="123431000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="16" y="23" width="1280" height="710" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="710" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28832406" sideWeight="0.49344262" order="0" side_tool="false" content_ui="combo" />
@@ -482,26 +404,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/imagesJS体验/search.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imagesJS体验/right.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imagesJS体验/left.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imagesJS体验/4.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/imagesJS体验/5.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -713,7 +615,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="954">
           <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -784,7 +685,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/05-04 放大镜/拖拽案例.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
+        <state relative-caret-position="1584">
           <caret line="88" column="25" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="25" />
           <folding />
         </state>
@@ -800,7 +701,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/05-04 放大镜/模拟滚动条.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
+        <state relative-caret-position="558">
           <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
           <folding />
         </state>
@@ -811,10 +712,44 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/05-15缓动框架/缓动框架">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/05-04 放大镜/模仿淘宝放大镜.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
+        <state relative-caret-position="118">
           <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05-15 缓动框架/Jqurey 1.0.0.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="67" column="9" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc;n#animate#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05-15 缓动框架/缓动框架.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05-15 缓动框架/仿360开机效果.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding />
         </state>
       </provider>

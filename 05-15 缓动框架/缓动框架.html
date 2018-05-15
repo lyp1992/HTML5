@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        div{
+            position: absolute;
+            left:40px;
+            top:40px;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+
+<button>运动到400</button>
+<div></div>
+
+<script>
+    window.onload = function () {
+
+//        获取标签
+        var button = document.getElementsByTagName("button")[0];
+        var div = document.getElementsByTagName("div")[0];
+
+        button.onclick = function () {
+            var json1 = {"left":300,"top":200,"width":300,"height":200};
+            var json2 = {"left":40,"top":40,"width":100,"height":100};
+            animate(div,json1,function () {
+                animate(div,json2,function () {
+
+                });
+            });
+        }
+
+        function animate(ele,json,fn) {
+
+//            清空定时器
+            clearInterval(ele.timer);
+            ele.timer = setInterval(function () {
+
+//                开闭原则
+                var bool = true;
+
+//                获取步长
+                for(var k in json){
+                    var leader = parseInt(getStyle(ele,k))||0;
+                    var step = (json[k] - leader)/10;
+                    step = step>0 ? Math.ceil(step):Math.floor(step);
+                    leader = leader + step;
+
+//                    赋值
+                    ele.style[k] = leader + "px";
+                    if (json[k] !== leader){
+                        bool = false;
+                    }
+                }
+
+                if (bool){
+                    clearInterval(ele.timer);
+                    if (fn){
+                        fn();
+                    }
+
+                }
+
+            },25);
+
+            function getStyle(ele,attr) {
+                if (window.getComputedStyle){
+                    return window.getComputedStyle(ele,null)[attr];
+                }
+                return ele.currentStyle[attr];
+            }
+        }
+
+    }
+</script>
+
+</body>
+</html>

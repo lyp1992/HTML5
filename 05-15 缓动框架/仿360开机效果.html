@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width:322px;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+        span{
+            position: absolute;
+            top:0;
+            right: 0;
+            width: 30px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+<!--布局  1.一个关闭按钮,上半部,下半部-->
+<div class="box">
+    <span id="close"></span>
+    <div class="hd" id="hd">
+        <img src="images/b.jpg">
+    </div>
+    <div class="td" id="td">
+        <img src="images/t.jpg">
+    </div>
+</div>
+
+<script src="Jqurey%201.0.0.js"></script>
+<script>
+    window.onload = function () {
+
+//        获取标签
+        var span = document.getElementById("close");
+        var hd = span.parentNode;
+        var td = document.getElementById("td");
+
+        span.onclick = function () {
+            animate(td,{"height":0},function () {
+                animate(hd,{"width":0});
+            });
+        }
+    }
+
+</script>
+
+</body>
+</html>
