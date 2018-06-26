@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding:0;
+            font-family: "宋体", "微软雅黑";
+            background-color: #0A7EC3;
+        }
+        .nav{
+            height: 40px;
+            margin-top: 50px;
+            text-align: center;
+            list-style: none;
+        }
+        li{
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            float: left;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: all 1s;
+        }
+        li span{
+            position: absolute;
+            width: 100%;
+            height:100%;
+            display: block;
+        }
+         li span:nth-child(1){
+             background-color: #7AB800;
+             transform:translateZ(20px);
+         }
+        li span:nth-child(2){
+            background-color: #0A7EC3;
+            transform:rotateX(90deg) translateZ(20px) ;
+        }
+        .nav:hover li{
+            transform: rotateX(-90deg);
+        }
+        .nav li:nth-child(2){
+            transition-delay: 0.2s;
+        }
+        .nav li:nth-child(3){
+            transition-delay: 0.3s;
+        }
+        .nav li:nth-child(4){
+            transition-delay: 0.4s;
+        }
+        .nav li:nth-child(5){
+            transition-delay: 0.5s;
+        }
+
+    </style>
+</head>
+<body>
+<ul class="nav">
+    <li>
+        <span>的web前端</span>
+        <span>赖永鹏</span>
+    </li>
+    <li>
+        <span>的web前端</span>
+        <span>赖永鹏</span>
+    </li>
+    <li>
+        <span>的web前端</span>
+        <span>赖永鹏</span>
+    </li>
+    <li>
+        <span>的web前端</span>
+        <span>赖永鹏</span>
+    </li>
+    <li>
+        <span>的web前端</span>
+        <span>赖永鹏</span>
+    </li>
+</ul>
+</body>
+</html>

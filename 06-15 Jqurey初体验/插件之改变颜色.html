@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        input{
+            width: 100px;
+            height: 50px;
+            top:0px;
+            left: 0px;
+        }
+        div{
+            width: 100px;
+            height: 200px;
+            background-color: black;
+        }
+    </style>
+    <script src="../jquery-1.11.1.js"></script>
+    <script src="../jquery.color.js"></script>
+    <script>
+        $(function () {
+           $("input").on("click",function () {
+             $("div").animate({"width":200,"background-color":"red"},2000,function () {
+                 alert("动画结束");
+               });
+           });
+        });
+    </script>
+</head>
+<body>
+<input type="button" value="改变背景颜色">
+<div>
+</div>
+</body>
+</html>

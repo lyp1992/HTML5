@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .box{
+            width: 200px;
+            height: 200px;
+            margin: 100px;
+            background-color: green;
+            /* animation: 动画名称 持续时间  执行次数  是否反向  运动曲线 延迟执行*/
+            /*animation: gun 4s steps(4);*/
+
+            /*动画的基本熟悉*/
+            /* 动画名称*/
+            animation-name: gun;
+            /* 一次动画持续时间  前两属性是必须，且顺序固定*/
+            animation-duration: 4s;
+            /* 动画执行次数  无数次：infinite*/
+            animation-iteration-count: 1;
+            /* 动画的方向： normal 正常 ， alternate： 反向*/
+            animation-direction: normal;
+            /* 动画延迟执行*/
+            animation-delay: 1s;
+            /* 设置动画结束盒子盒子的状态
+                forwards：保持动画结束后的状态
+                backwards：保持动画开始前的状态*/
+            animation-fill-mode: forwards;
+            /* 运动曲线  linear   ease-in-out  steps()*/
+            /*animation-timing-function:ease-in;*/
+            animation-timing-function: ease-in;
+
+            /*step()逐帧函数*/
+
+        }
+
+        @keyframes gun {
+            0%{
+                background-color: green;
+                transform: translateX(0px) translateY(0px);
+                border-radius: 0px;
+            }
+            25%{
+                background-color: yellow;
+                transform: translateX(500px) translateY(0px);
+            }
+            50%{
+                background-color: red;
+                transform:translateX(500px) translateY(300px);
+                border-radius: 100px;
+            }
+            75%{
+                background-color: #0A7EC3;
+                transform:translateX(0px) translateY(300px);
+            }
+            100%{
+                background-color: green;
+                transform: translateX(0px) translateY(0px);
+                border-radius: 0px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="box">
+</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        .wrap{
+            width: 320px;
+            height: 200px;
+            margin: 100px auto 0;
+        }
+        .wrap h1{
+            text-align: center;
+        }
+
+        .wrap div {
+            width: 320px;
+            height: 100px;
+            background: pink;
+            font-size: 30px;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+
+        jQuery(document).ready(function () {
+
+//            获取标签
+            var div = $("#content");
+            var span = $("#keycodeSpan");
+            $(document).keyup(function (e) {
+//                调用方法
+                setColor(e.keyCode);
+            });
+            function setColor(aaa) {
+                alert(aaa);
+                switch (aaa){
+                    case 82:
+                        setEle("red",aaa);
+                        break;
+                    case 71:
+                        setEle("green",aaa);
+                        break;
+                    case 66:
+                        setEle("blue",aaa);
+                        break;
+                    default:
+                        alert("暂时没有开放这个颜色设置");
+                }
+            }
+
+            function setEle(a,b) {
+                div.css("background-Color",a);
+                span.text(b);
+            }
+        });
+    </script>
+</head>
+<body>
+
+<div class="wrap">
+    <h1>按键改变颜色</h1>
+    <div class="content" id="content">
+        keycode为:
+        <span id="keycodeSpan">80</span>
+    </div>
+</div>
+
+</body>
+</html>

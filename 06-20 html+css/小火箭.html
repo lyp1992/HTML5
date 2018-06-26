@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+       html, body{
+            height: 100%;
+        }
+        body{
+            background-color: deepskyblue;
+        }
+        .rocket{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+
+            left: 0px;
+            bottom: 0px;
+            transform: translate(-100px,100px) rotate(45deg);
+
+            /*过渡*/
+            transition: all 1s;
+        }
+        body:hover .rocket{
+            transform: translate(500px,-500px) rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+<img class="rocket" src="image/rocket_20180521143842.png" >
+</body>
+</html>

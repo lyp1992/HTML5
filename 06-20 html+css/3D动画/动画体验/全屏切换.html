@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        body{
+            overflow: hidden;
+        }
+        html,body{
+            height: 100%;
+        }
+        .img-box{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 0;
+        }
+        .img-box img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top:0;
+        }
+        .img-box img:target{
+            z-index: 5;
+        }
+        /*默认选择第一个*/
+        .img-box img:nth-child(1){
+            z-index: 1;
+        }
+        /*设置动画效果*/
+        .img-box img:nth-child(1):target{
+            /*从左边滑入*/
+            animation: showLeft 2s;
+        }
+        .img-box img:nth-child(2):target{
+            /*从顶部滑入*/
+            animation:showTop 2s;
+        }
+        .img-box img:nth-child(3):target{
+            /*旋转*/
+            animation:rot 2s;
+        }
+
+        /*设置按钮*/
+        ul{
+            position: absolute;
+            width: 300px;
+            height: 80px;
+            left: 50%;
+            bottom: 20px;
+            margin-left: -150px;
+        }
+        ul li{
+            float: left;
+        }
+        ul li a{
+            display: block;
+            width: 80px;
+            height: 80px;
+            background-color: pink;
+            border-radius: 50%;
+            margin-left:20px;
+            text-align: center;
+            line-height: 80px;
+            font-size:30px;
+            color:red;
+            text-decoration: none;
+        }
+
+        @keyframes showLeft {
+            0%{
+                transform: translateX(-2000px);
+            }
+            100%{
+                transform: translateX(0px);
+            }
+        }
+
+        @keyframes showTop {
+            0%{
+                transform: translateY(-2000px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+        @keyframes rot {
+            0%{
+                transform: scale(0.5) rotate(345deg);
+            }
+            100%{
+                transform: scale(1) rotate(0deg);
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="img-box">
+        <img src="../../image/bg1_20180521143854.jpg" id="img1">
+        <img src="../../image/bg2_20180521143902.jpg" id="img2">
+        <img src="../../image/bg3_20180521143904.jpg" id="img3">
+    </div>
+    <ul>
+        <li><a href="#img1">1</a></li>
+        <li><a href="#img2">2</a></li>
+        <li><a href="#img3">3</a></li>
+    </ul>
+
+</body>
+
+</html>

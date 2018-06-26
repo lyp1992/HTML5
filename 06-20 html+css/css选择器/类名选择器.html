@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+
+        div{
+            width: 300px;
+            height: 40px;
+            margin: 10px auto 0;
+            border: 1px solid #000;
+            text-align: center;
+        }
+        /*
+        .box <!--类名选择器-->
+        #id id选择器
+        div p  后代选择器
+        div.box 交际选择器
+        div p span 并集选择器
+        div>p 子代选择器
+        * : 通配符
+        div+p: 选中div后面相邻的第一个p
+        div~p: 选中div后面所有的p
+        */
+        /*div+p{*/
+            /*background-color: red;*/
+        /*}*/
+        /*div~p{*/
+            /*!*background-color: black;*!*/
+        /*}*/
+
+        /*属性选择器*/
+        div[class^='a']{
+        /*//以a开头*/
+            background-color: blue;
+        }
+        div[class$='a']{
+            /*//以a结尾*/
+            background-color: black;
+        }
+        div[class*='aa']{
+            /*值中含有aa*/
+            background-color: red;
+        }
+
+        /*
+        *: :hover  :link  :active  :visited  lvha
+        标志性符号：冒号（:）
+      */
+        .box:hover{
+            background-color: yellow;
+        }
+        /*J结构伪类*/
+        p:nth-child(odd){
+            /*奇数*/
+            background-color: #0A7EC3;
+        }
+        p:first-child{
+            /*必须要有父类才有效*/
+            background-color: #00b0e7;
+        }
+
+        div:empty{
+            /*内容是空的*/
+            background-color: #2F6CAD;
+        }
+
+        h1:target{
+
+            background-color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="box1">1</div>
+<div><p>ppppppppp</p></div>
+<div class="abox2">2</div>
+<div class="bbbox3">3</div>
+<div class="box4aa">4</div>
+<div class="box5bb">5</div>
+<div class="aabox6bb">6</div>
+<div class="bbbox7a">7</div>
+<div class="box"></div>
+<span>span</span>
+<p>ppppppppp</p>
+<p>ppppppppp</p>
+<div><a href="#body_h1">点我</a></div>
+<h1 class="body_h1" id="body_h1">标题</h1>
+
+</body>
+</html>

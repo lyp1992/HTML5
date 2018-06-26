@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .ad{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            width: 230px;
+            height: 120px;
+            background-image: url(imgs/ad.jpg);
+            display: none;
+        }
+        .ad span{
+            position: absolute;
+            right:0;
+            top:0;
+            width: 40px;
+            height: 18px;
+            background-image: url(imgs/h.jpg);
+            cursor: pointer;
+        }
+    </style>
+    <script src="../../jquery-1.11.1.js"></script>
+    <script>
+        $(function () {
+//            需求,让广告部分先滑入,在滑出,在淡入,点击之后淡出
+            $(".ad").slideDown(1000).slideUp(1000).fadeIn(1000).children("span").click(function () {
+
+//                $(".ad").fadeOut(1000);
+                $(this).parent().fadeOut(1000);
+            });
+
+        })
+    </script>
+
+</head>
+
+<body>
+
+    <div class="ani">我是内容</div>
+    <div class="ad">
+         <span></span>
+    </div>
+
+</body>
+</html>

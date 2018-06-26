@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        div{
+            width: 1000px;
+            height: 100px;
+            margin: 30px auto;
+            border: 1px solid #000000;
+        }
+        div:nth-child(1){
+            background-image: linear-gradient(to right,yellow,blue);
+        }
+        div:nth-child(2){
+            background-image: linear-gradient(135deg,#ffffff 0%,#ffffff 25%,
+            #000000 25%,
+            #000000 50%,
+            #ffffff 50%,
+            #ffffff 75%,
+            #000000 75%,
+            #000000 100%
+            );
+            background-size: 100px 100%;
+            animation: gun 1s infinite linear;
+        }
+        @keyframes gun {
+            0%{
+                background-position: 0px 0px;
+            }
+            100%{
+                background-position: 100px 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+</body>
+</html>

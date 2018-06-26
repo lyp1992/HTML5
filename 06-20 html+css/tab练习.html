@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .tabs{
+            width: 400px;
+            margin: 30px auto;
+            background-color: #FFF;
+            border: 1px solid #C0DCC0;
+            box-sizing: border-box;
+        }
+        .tabs nav{
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            background-color: #C0DCC0;
+            display: flex;
+            overflow: hidden;
+        }
+        nav a{
+            display: block;
+            width: 100px;
+            border-right: 1px solid #FFF;
+            color: #000;
+            text-decoration: none;
+        }
+        nav a:last-child{
+            border-right:none;
+        }
+        nav a.active{
+            background-color: #9BAF9B;
+        }
+
+        .cont {
+            overflow: hidden;
+            display: none;
+        }
+
+        .cont ol {
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="tabs">
+    <nav>
+        <a href="javascript:;" data-cont="local">国内新闻</a>
+        <a href="javascript:;" data-cont="global">国际新闻</a>
+        <a href="javascript:;" data-cont="sports">体育新闻</a>
+        <a href="javascript:;" data-cont="funny">娱乐新闻</a>
+    </nav>
+    <section class="cont" id="local">
+        <ol>
+            <li>河感在生矿难，死伤在全10</li>
+            <li>禽流感在感在广1处继续蔓延，温家宝指示</li>
+            <li>南方大旱，农作物减产绝收面积上亩</li>
+            <li>猪流感在广在全国暴发</li>
+            <li>禽流感在全国多处继续蔓延，温家宝指示</li>
+            <li>南方大旱，农作物减产绝收面积上亩</li>
+            <li>猪流感在广东群体性暴发</li>
+        </ol>
+    </section>
+    <section class="cont" id="global">
+        <ol>
+            <li>河南再次发生矿难，死伤人数超过100</li>
+            <li>禽流感次发生蔓延，温家宝指示</li>
+            <li>南方大旱，农作物减产绝收面积上亩</li>
+            <li>猪流感在广减产绝收发</li>
+            <li>禽流感在全国多作物减产绝收面积上亩</li>
+            <li>猪流感在广东群体性暴发</li>
+        </ol>
+    </section>
+    <section class="cont" id="sports">
+        <ol>
+            <li>333河南再次发生矿难，死伤人数超过100</li>
+            <li>禽流感在全国多处农作物农延，温家宝指示</li>
+            <li>南方大旱，农作物减产绝收面积上亩</li>
+            <li>猪流感在广东群体性暴发</li>
+            <li>禽流感在全农作物继续蔓延，温家宝指示</li>
+            <li>南方大农作物减产绝收面积上亩</li>
+            <li>猪流感在广东群体性暴发</li>
+        </ol>
+    </section>
+    <section class="cont" id="funny">
+        <ol>
+            <li>福建发生血腥命案:两女遭割喉 1男孩被砍数刀</li>
+            <li>四川原副省长李成云被查 5年前曾违纪又复出</li>
+            <li>胡歌反对粉丝探班：以前请吃饭现在会黑脸</li>
+            <li>曝郑爽爸爸歌厅撩妹 与女子勾肩搭背显亲密</li>
+            <li>宜宾公安副局长无证驾驶出车祸 弃车离开现场</li>
+            <li>国子监大街门匾现错字 已悬挂近10年(图)</li>
+            <li>猪流感在广东群体性暴发</li>
+        </ol>
+    </section>
+</div>
+<script>
+    <!--默认第一个,key 代表第几个-->
+    (function (key) {
+//        获取nav
+        var navs = document.querySelectorAll('nav a');
+        for (var i=0;i<navs.length;i++){
+            if (key === i){
+                navs[i].classList.add('active');
+                var secID = navs[i].dataset['cont'];
+                console.log(secID);
+//                获取对应的标签,设置display属性为block
+                document.querySelector('#'+secID).style.display = 'block';
+            }
+
+            navs[i].onclick = function () {
+
+//                过滤掉无效点击
+                if (this.classList.contains('active')){
+                    return;
+                };
+//                清除之前active
+//                1.获取active属性
+                var currentNav = document.querySelector('.active');
+                var currentSecId = currentNav.dataset['cont'];
+//                清除active
+                currentNav.classList.remove('active');
+                document.querySelector('#'+currentSecId).style.display = 'none';
+
+//                设置现在的active
+                this.classList.add('active');
+                var myid = this.dataset['cont'];
+                document.querySelector('#'+myid).style.display = 'block';
+
+            };
+        }
+
+    })(0);
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .box{
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            position: relative;
+        }
+        body{
+            background-color: cornflowerblue;
+        }
+        .box>div{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transition: all 2s;
+            backface-visibility: hidden;
+        }
+        .box1{
+          background: url("../image/bg_20180521143849.png") left 0 no-repeat;
+            transform: rotateY(-180deg);
+        }
+        .box2{
+            background: url("../image/bg_20180521143849.png") right 0 no-repeat;
+        }
+        .box:hover .box1{
+            transform: rotateY(0deg);
+        }
+        .box:hover .box2{
+            transform: rotateY(180deg);
+        }
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="box1"></div>
+    <div class="box2"></div>
+</div>
+
+</body>
+</html>

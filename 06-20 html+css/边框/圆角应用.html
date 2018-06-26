@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            margin: 20px auto;
+            text-align: center;
+            line-height: 200px;
+            font-size: 50px;
+        }
+        div:nth-child(1){
+            border-radius: 50%;
+        }
+        div:nth-child(2){
+            border-radius: 100px;
+        }
+        div:nth-child(3){
+            border-radius: 200px 0 0;
+        }
+        div:nth-child(4){
+            height: 100px;
+            line-height: 100px;
+            border-radius:100px/50px;
+        }
+        div:nth-child(5){
+            width: 100px;
+            border-radius: 50%;
+        }
+        div:nth-child(6){
+            border-radius: 0px 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+</body>
+</html>

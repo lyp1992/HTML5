@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+
+            transition: all 2s;
+            margin: 100px auto;
+        }
+        body{
+            perspective: 600px;
+        }
+        .box:hover{
+            /*transform: translateX(100px);*/
+            /*transform: translateY(200px);*/
+            /*必须配合透视来使用*/
+                transform: translateZ(200px);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="box">
+
+</div>
+</body>
+</html>

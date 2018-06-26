@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .box{
+            width: 300px;
+            height: 400px;
+            margin:10px auto;
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box box1" id="box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <button>切换类名</button>
+    <script>
+<!--获取单个-->
+//        var box1 = document.querySelector(".box3");
+//        box1.style.background = 'red';
+
+//获取所有
+//        var boxs = document.querySelectorAll("div");
+//        for (var i=0;i<boxs.length;i++){
+//            boxs[i].style.background = 'red';
+//        }
+
+//        类名
+        var box1 = document.querySelector(".box1");
+//        添加类名
+        box1.classList.add('active');
+
+//        判断是否包含类名
+        var f = box1.classList.contains('active');
+        console.log(f);
+
+//        切换属性
+        var button = document.getElementsByTagName("button")[0];
+        button.onclick = function () {
+            document.querySelector(".box2").classList.toggle('active');
+            var boxs = document.querySelectorAll("div");
+            for (var i=0;i<boxs.length;i++){
+                var bool = boxs[i].classList.contains('active');
+                if (bool) {
+                    boxs[i].style.background = 'red';
+                }else {
+                    boxs[i].style.background = 'green';
+                }
+            }
+        };
+
+//    document.querySelector('button').onclick=function(){
+//    document.querySelector('.box3').classList.toggle('active');
+//    var boxs = document.querySelectorAll("div");
+//    for (var i=0;i<boxs.length;i++){
+//        var bool = boxs[i].classList.contains('active');
+//        if (bool) {
+//            boxs[i].style.background = 'red';
+//        }else {
+//            boxs[i].style.background = 'green';
+//        }
+//    }
+//}
+
+
+
+    </script>
+</body>
+</html>

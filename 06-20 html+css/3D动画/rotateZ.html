@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .rotateZ{
+            width: 200px;
+            height: 200px;
+            margin: 300px auto;
+            perspective: 200px;
+        }
+        img{
+            transition: transform 2s;
+        }
+        .rotateZ:hover img{
+            /*平面旋转*/
+            transform: rotateZ(360deg);
+        }
+    </style>
+</head>
+<body>
+
+<div class="rotateZ">
+    <img src="../image/z_20180521143836.jpg">
+</div>
+
+</body>
+</html>

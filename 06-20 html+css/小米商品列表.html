@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: #F7F7F7;
+        }
+        .items{
+            width: 1250px;
+            height: 320px;
+            padding-left: 20px;
+            margin: 80px auto;
+        }
+        .item{
+            width: 230px;
+            height: 300px;
+            text-align: center;
+            background: #ffffff;
+            float: left;
+            margin-right: 20px;
+            transition: all 1s;
+            position: relative;
+            overflow: hidden;
+        }
+        .pic{
+            margin-top: 30px;
+        }
+        .des{
+            width: 100%;
+            height: 100px;
+            bottom: -100px;
+            background-color: #ff6700;
+            transition: all 1s;
+            position: absolute;
+        }
+
+        .item:hover{
+            top:-5px;
+            box-shadow: 0 0 15px  #A6A6A6;
+        }
+       .item:hover .des{
+           bottom: 0px;
+       }
+
+    </style>
+
+</head>
+<body>
+
+<div class="items">
+    <div class="item">
+        <img src="image/1_201805211438438.jpg">
+    </div>
+
+    <div class="item">
+        <div class="pic">
+            <img src="image/2_20180521143851.jpg">
+        </div>
+        <div class="des"></div>
+    </div>
+
+    <div class="item">
+        <div class="pic">
+            <img src="image/3_20180521143839.jpg">
+        </div>
+        <div class="des"></div>
+    </div>
+
+    <div class="item">
+        <div class="pic">
+            <img src="image/4_20180521143843.jpg">
+        </div>
+        <div class="des"></div>
+    </div>
+
+    <div class="item">
+        <div class="pic">
+            <img src="image/5_20180521143844.jpg">
+        </div>
+        <div class="des"></div>
+    </div>
+
+</div>
+
+</body>
+</html>

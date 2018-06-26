@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{
+            padding:0;
+            margin: 0;
+        }
+        .comment{
+            font-size: 40px;
+            color: #ff3100;
+        }
+        .comment li{
+            cursor: pointer;
+            float: left;
+        }
+        ul{
+            list-style-type: none;
+        }
+    </style>
+    <script src="../jquery-1.11.1.js"></script>
+    <script>
+        $(function () {
+            var wjx_none = '☆'; // 空心五角星
+            var wjx_sel = '★'; // 实心五角星
+//            需求,当鼠标放在上面时,前面的空心变实心
+
+            $(".comment li").on("mouseenter",function () {
+
+                $(this).text(wjx_sel).prevAll("li").text(wjx_sel).end().nextAll("li").text(wjx_none);
+            });
+//            移开的时候,重置
+
+            $(".comment li").on("mouseleave",function () {
+               if ($("li.current").length === 0){
+                   $(".comment li").text(wjx_none);
+               }else {
+                   $("li.current").text(wjx_sel).prevAll("li").text(wjx_sel).end().nextAll("li").text(wjx_none);
+               }
+            });
+//            点击某一个的时候,这个和前面所有编程红色
+            $(".comment li").on("click",function () {
+               $(this).attr("class","current").siblings("li").removeAttr("class");
+            });
+        });
+    </script>
+</head>
+<body>
+<ul class="comment">
+    <li>☆</li>
+    <li>☆</li>
+    <li>☆</li>
+    <li>☆</li>
+    <li>☆</li>
+</ul>
+</body>
+</html>
