@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .clock{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            margin: 100px auto;
+            border: 10px solid #000000;
+            border-radius: 110px;
+        }
+        .line{
+            /*设置长度大小 颜色,位置*/
+            width: 4px;
+            height: 100%;
+            left: 50%;
+            margin-left: -2px;
+            background: grey;
+            position: absolute;
+        }
+        /*设置各个时钟线的位置*/
+        .line2{
+            transform: rotate(30deg);
+        }
+        .line3{
+            transform: rotate(60deg);
+        }
+        .line4{
+            transform: rotate(90deg);
+        }
+        .line5{
+            transform: rotate(120deg);
+        }
+        .line6{
+            transform: rotate(150deg);
+        }
+        .line1,.line4{
+            width: 6px;
+            margin-left: -3px;
+        }
+
+        .cover{
+            /*大小,位置,颜色*/
+            width: 160px;
+            height: 160px;
+            position: absolute;
+            left: 50%;
+            top:50%;
+            margin-left: -80px;
+            margin-top: -80px;
+            background: #ffffff;
+            border-radius: 80px;
+        }
+
+        /*时分秒*/
+        .hour{
+            width: 6px;
+            height: 60px;
+            position: absolute;
+            left: 50%;
+            top:50%;
+            margin-left: -3px;
+            margin-top: -60px;
+            background-color: pink;
+
+            /*计算时间*/ /*时针走完一格应该是60*60*60  那么步数应该是3600*12s*/
+            animation: change 43200s steps(43200) infinite;
+            transform-origin: bottom center;
+        }
+        .minute{
+            width: 4px;
+            height: 70px;
+            position: absolute;
+            left:50%;
+            top:50%;
+            margin-top: -70px;
+            margin-left: -2px;
+            background-color: green;
+            /*计算时间*/
+            animation: change 3600s steps(3600) infinite;
+            transform-origin: bottom center;
+        }
+        .second{
+            width: 2px;
+            height: 80px;
+            position: absolute;
+            left: 50%;
+            top:50%;
+            margin-top: -80px;
+            margin-left: -1px;
+            background-color: black;
+            /*计算时间*/
+            animation: change 60s steps(60) infinite;
+            transform-origin: bottom center;
+        }
+        .dotted{
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            left: 50%;
+            top:50%;
+            margin-left: -4px;
+            margin-top: -4px;
+            background-color: black;
+            border-radius: 4px;
+        }
+        @keyframes change {
+           from{
+
+               transform: rotate(0deg);
+           }to{
+                       transform: rotate(360deg);
+
+                       }
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="clock">
+    <div class="line line1"></div>
+    <div class="line line2"></div>
+    <div class="line line3"></div>
+    <div class="line line4"></div>
+    <div class="line line5"></div>
+    <div class="line line6"></div>
+    <div class="cover"></div>
+    <div class="hour"></div>
+    <div class="minute"></div>
+    <div class="second"></div>
+    <div class="dotted"></div>
+</div>
+
+</body>
+</html>
